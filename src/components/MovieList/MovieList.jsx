@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState, useRef } from 'react'
 import Filter from 'components/Filter/Filter'
 import { APP } from 'components/Shared/constants'
-import fetchMovies from 'services/api'
+import { fetchMovies } from 'services/api'
 import MovieCard from 'components/MovieCard/MovieCard'
 import { formateDate } from 'services/helper'
 import { FetchContext } from 'context/FetchProvider'
-import useIntersectionObserver from 'hooks/useIntersectionObserver'
+import useIntersectionObserver from 'hooks/use-intersection-observer'
 import {
   MoviesWrapper,
   PopularTitle,
@@ -16,6 +16,7 @@ import {
 
 /**
  * Listing all movies cards.
+ *
  * @return {JSX.Element}
  */
 export default function MovieList() {
@@ -49,8 +50,7 @@ export default function MovieList() {
 
 
   /**
-   * Load more movies
-   * @return {void}
+   * Load more movies.
    */
   const loadMore = () => setPage((prePage) => prePage + 1)
 

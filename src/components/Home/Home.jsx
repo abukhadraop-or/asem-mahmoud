@@ -7,7 +7,8 @@ import { FetchProvider } from 'context/FetchProvider'
 
 
 /**
- * Home page contains navbar and movie list
+ * Home page contains navbar and movie list.
+ *
 * @return {JSX.Element}
  */
 export default function Home() {

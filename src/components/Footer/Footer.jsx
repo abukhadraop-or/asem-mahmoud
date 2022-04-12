@@ -14,6 +14,7 @@ import {
 
 /**
  * Footer content.
+ *
  * @return {JSX.Element}
  */
 export default function Footer() {

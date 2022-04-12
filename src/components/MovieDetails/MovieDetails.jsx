@@ -16,11 +16,13 @@ import {
 
 /**
  * Movie information.
+ *
  * @param {Object} props
  * @param {string} props.date Movie's release date.
  * @param {string} props.name Movie's name.
  * @param {number} props.vote Movie's vote.
  * @param {number} props.overview Movie's overview.
+ *
 * @return {JSX.Element}
  */
 export default function MovieDetails({ date, name, overview, vote }) {

@@ -14,38 +14,36 @@ import {
   DropDownItems,
   DropDownSelectedItem,
   DropDownItem,
-  FilterWrapper,
 } from './filter-styles'
 
 export default function Filter() {
   const [toggleFilter, setToggleFilter] = useState(true)
   const [toggleDropDown, setToggleDropDown] = useState(false)
   const [selectedItem, setSelectedItem] = useState(APP.SORT_FILTERS[0].name)
-  const { setValues } = useContext(FetchContext)
+  const ctx = useContext(FetchContext)
 
   /**
-   * handle toggle filter component
-   * @return {void}
+   * Handle toggle filter component.
   */
   const handleToggleFilter = () => {
     setToggleFilter(!toggleFilter)
     setToggleDropDown(false)
   }
 
-    /**
-   * handle toggle drop down component
-   * @param {string} newSelectedItem selected item
-   * @param {string} sortBy sortBy value
-   * @return {void}
+  /**
+   * Handle toggle drop down component.
+   *
+   * @param {string} newSelectedItem Selected item.
+   * @param {string} sortBy SortBy value.
   */
     const handleToggleDropDown = (newSelectedItem, sortBy) =>  {
       setToggleDropDown(false)
       setSelectedItem(newSelectedItem)
-      setValues({ sortBy })
+      ctx?.setValues({ sortBy })
     }
 
   return (
-    <FilterWrapper>
+    <div>
       <FilterBox>
         <FilterContent>
           <FilterName>{APP.SORT_FILTER}</FilterName>
@@ -66,6 +64,6 @@ export default function Filter() {
             </FilterSortContent>)
             }
       </FilterBox>
-    </FilterWrapper>
+    </div>
   )
 }

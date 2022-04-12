@@ -1,5 +1,5 @@
-const IMAGE_BASE_URL = 'http://image.tmdb.org/t/p/';
-const POSTER_SIZE = 'w500';
+export const IMAGE_BASE_URL = 'http://image.tmdb.org/t/p/';
+export const POSTER_SIZE = 'w500';
 
 /**
  * Get movie poster image url.

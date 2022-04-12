@@ -15,14 +15,16 @@ export const FetchContext = React.createContext()
 
 /**
  * Context provider.
+ *
  * @param {Object} props
  * @param {JSX.Element} props.children The children inside provider.
  * @param {Object} props.newValues The provider's values.
+ *
 * @return {JSX.Element}
  */
 export function FetchProvider({ children, newValues }) {
   const [values, setValues] = useState(newValues)
-  const contextValue = useMemo(() => ({ setValues, values}), [values])
+  const contextValue = useMemo(() => ({ setValues, values }), [values])
 
   return (
     <FetchContext.Provider value={contextValue}>

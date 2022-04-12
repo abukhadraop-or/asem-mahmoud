@@ -18,6 +18,7 @@ import {
 
 /**
  * Desktop navbar.
+ *
  * @return {JSX.Element}
  */
 export default function DesktopNavbar() {

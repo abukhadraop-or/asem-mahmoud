@@ -16,9 +16,11 @@ import {
 
 /**
  * Mobile navbar.
+ *
  * @param {Object} props
  * @param {boolean} props.isOpen Flag for toggling sidebar.
  * @param {Function} props.toggleSidebar function to handle sidebar toggling.
+ *
 * @return {JSX.Element}
  */
 export default function MobileNavbar({ isOpen, toggleSidebar }) {

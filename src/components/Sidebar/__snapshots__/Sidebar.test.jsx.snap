@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sidebar /> renders correctly 1`] = `
+<styled.div
+  show={true}
+>
+  <styled.ul
+    show={true}
+  >
+    <styled.li
+      key="Movies"
+      onClick={[Function]}
+    >
+      Movies
+    </styled.li>
+    <styled.li
+      key="TV Shows"
+      onClick={[Function]}
+    >
+      TV Shows
+    </styled.li>
+    <styled.li
+      key="People"
+      onClick={[Function]}
+    >
+      People
+    </styled.li>
+    <styled.li
+      key="Discussions"
+    >
+      Discussions
+    </styled.li>
+    <styled.li
+      key="Leaderboard"
+    >
+      Leaderboard
+    </styled.li>
+    <styled.li
+      key="Support"
+    >
+      Support
+    </styled.li>
+    <styled.li
+      key="API"
+    >
+      API
+    </styled.li>
+  </styled.ul>
+</styled.div>
+`;

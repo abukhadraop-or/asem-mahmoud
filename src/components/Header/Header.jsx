@@ -6,7 +6,8 @@ import DesktopNavbar from 'components/DesktopNavbar/DesktopNavbar'
 import Header from './header-styles'
 
 /**
- *  Navbar list.
+ * Navbar list.
+ *
  * @return {JSX.Element}
  */
 export default function Navbar() {

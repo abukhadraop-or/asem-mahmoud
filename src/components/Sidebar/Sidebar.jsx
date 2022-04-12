@@ -13,16 +13,17 @@ import {
 
 /**
  *  Sidebar list for mobile view.
+ *
  * @param {Object} props
  * @param {boolean} props.show Flag for display sidebar.
+ *
  * @return {JSX.Element}
  */
 export default function Sidebar({ show }) {
   const [selected, setSelected] = useState('')
 
   /**
-   * @param {string} item - The selected item .
-   * @return {void}
+   * @param {string} item - The selected item.
    */
   const handleSelectedSubMenu = (item) => {
     setSelected(item === selected ? '' : item)

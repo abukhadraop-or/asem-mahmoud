@@ -1,6 +1,13 @@
 /**
- * Http get request
- * @param {string} apiUrl The url will fetch from
- * @return {Promise} Promise get request
+ * Http get request.
+ *
+ * @param {string} apiUrl The url will fetch from.
+ * @param {Object} headers The headers for api request.
+ *
+ * @return {Promise<Object>} Promise get request
  */
-export default function getHttpRequest(apiUrl) { return fetch(apiUrl, { method: 'GET' })};
+export default async function getHttpRequest(apiUrl, headers = {}) {
+  const response = await fetch(apiUrl, { headers });
+
+  return response.json()
+};
