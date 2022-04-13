@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filter /> renders correctly 1`] = `
+<div>
+  <styled.div>
+    <styled.div>
+      <styled.div>
+        Sort
+      </styled.div>
+      <styled.button
+        onClick={[Function]}
+      >
+        <styled.img
+          rotate={true}
+          src="glyphicons-basic-chevron-right.svg"
+        />
+      </styled.button>
+    </styled.div>
+    <styled.div>
+      <styled.div>
+        Sort Results By
+      </styled.div>
+      <styled.div>
+        <Styled(styled.button)
+          onClick={[Function]}
+        >
+          Popularity Descending
+        </Styled(styled.button)>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</div>
+`;
